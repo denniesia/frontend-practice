@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+  /* Colors */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-stone-100: hsl(30, 54%, 90%);
+  --clr-stone-150: hsl(30, 18%, 87%);
+  --clr-stone-600: hsl(30, 10%, 34%);
+  --clr-stone-900: hsl(24, 5%, 18%);
+  --clr-brown: hsl(14, 45%, 36%);
+  --crl-rose-800: hsl(332, 51%, 32%);
+  --crl-rose-50: hsl(330, 100%, 98%);
+
+
+
+  /* Typography */
+  --ff-youngserif: "Young Serif", sans-serif;
+  --ff-outfit: "Outfit", sans-serif;
+  --fs-body: 14px;
+  --fw-ys-400: 400;
+  --fw-of-400: 400;
+  --fw-of-600: 600;
+  --fw-of-700: 700;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-stone-100) ;
+}
+
+.wrapper .container {
+    background-color: var(--clr-white);
+    max-width: 45%;
+    margin: 4em auto ;
+    padding: 2.5em;
+    border-radius: 2em;
+}
+
+.wrapper .container .image-container img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 2em;
+}
+
+.wrapper .container h1 {
+    padding: 0.5em 0;
+    font-family: var(--ff-youngserif);
+    font-weight: var(--fw-ys-400);
+}
+
+.wrapper .container p {
+    font-family: var(--ff-outfit);
+    font-weight: var(--fw-of-400);
+    color: var(--clr-stone-900);
+    padding-bottom: 1em;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.wrapper .container .preparation-time-container {
+    background: var(--crl-rose-50);
+    padding: 1.4em;
+    border-radius: .4em;
+    margin-bottom: 1em;
+}
+
+.wrapper .container .preparation-time-container h3 {
+    color: var(--crl-rose-800);
+    font-family: var(--ff-outfit);
+    margin-bottom: 0.8em;
+    margin-left: .4em;
+}
+
+.wrapper .container .preparation-time-container ul {
+  color: var(--clr-brown);
+}
+
+.wrapper .container .preparation-time-container ul li {
+    margin-left: 1em;
+    list-style-position: inside;
+}
+
+.wrapper .container .preparation-time-container ul li + li {
+    margin-top: .5em;
+}
