@@ -91,3 +91,18 @@ body {
 .wrapper .container .preparation-time-container ul li + li {
     margin-top: .5em;
 }
+
+.wrapper .container h2 {
+    font-family: var(--ff-youngserif);
+    color: var(--clr-brown);
+    font-weight: var(--fw-of-400);
+    margin-bottom: 0.4em;
+}
+
+.wrapper .container ul li {
+    margin-left: 1.2em;
+    color: var(--clr-brown);
+    margin-bottom: 1em;
+    list-style-position;
+
+}
