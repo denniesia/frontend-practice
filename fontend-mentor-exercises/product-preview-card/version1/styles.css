@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces&display=swap');
+
+
+/* root */
+:root {
+    --clr-green-500:hsl(158, 36%, 37%); 
+    --clr-green-700:hsl(158, 42%, 18%);
+
+    --clr-black:hsl(212, 21%, 14%);
+    --clr-grey:hsl(228, 12%, 48%);
+    --clr-cream: hsl(30, 38%, 92%);
+    --clr-white:  hsl(0, 0%, 100%);
+
+
+    --ff-main: 'Montserrat', sans-serif;
+    --ff-headings: 'Fraunces', serif;
+    --fw-400: 500;
+    --fw-700: 700;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* text styles */
+.product-type {
+    font-family: var(--ff-main);
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--clr-grey);
+    margin: 0.7rem;
+}
+
+.product-name {
+    font-family: var(--ff-headings);
+    color: var(--clr-black);
+    font-weight: 800;
+    font-size: 34px;
+    margin: 0.7rem;
+    line-height: 2.5rem;
+}
+
+.product-description {
+    color: var(--clr-grey);
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0.7rem;
+}
+
+body {
+    background-color: var(--clr-cream);
+}
+
+.container {
+    padding: 2.8rem 1.5rem;
+    max-width: 40%;
+    margin: 0 auto;
+    
+}
+
+.wrapper {
+    background: var(--clr-white);
+    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.product-image ,
+.product-description {
+    flex: 1;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps the image nicely cropped */
+  display: block;
+}
+
+.product-price-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0.5rem 1rem;
+}
+
+.current-price {
+    font-family: var(--ff-main);
+    font-size: 2rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-green-500);
+}
+
+.original-price {
+    font-size: 1rem;
+    color: var(--clr-grey);
+    text-decoration: line-through;
+}
+
+button {
+    background-color: var(--clr-green-500);
+    color: var(--clr-white);
+    border-radius: .4rem;
+    display: flex;
+    align-items: center;
+    padding: .7em 3.5em;
+    gap: .4em;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 0.7rem;
+    margin-bottom: 1.5rem;
+    transition: all .3s ease;
+    border-color: var(--clr-green-700);
+}
+
+button:hover {
+    background-color: var(--clr-green-700);
+}
