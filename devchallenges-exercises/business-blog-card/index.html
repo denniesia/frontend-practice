@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
     <link
       rel="icon"
@@ -10,49 +11,49 @@
       type="image/x-icon"
       sizes="96x96"
     />
+    <link rel="stylesheet" href="styles.css">
 
-    <title>Business Blog Card | devChallenges.io</title>
-
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        height: 100vh;
-      }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        color: rgb(55, 65, 81);
-        text-decoration: underline;
-      }
-    </style>
+    <title>Business Blog Card</title>
   </head>
   <body>
-    <!-- Perfect solution for small business
-  
-    Small businesses need to generate leads to grow. You can use tools like Ringy.
-  
-    Amy Burgess
-  
-    Customer Manger, Solution Oy
-   -->
+    <main>
+      <article class="card">
 
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
-    </div>
+        <div class="image-container">
+          <img class="hero-image" src="resources/hero-image-1.jpg" alt="">
+          <img class="overlay" src="resources/white-overlay.svg" alt="">
+        </div>
+
+        <section class="content">
+          <h2 class="title">Perfect solution for small business</h2>
+          
+          <p class="desc">Small businesses need to generate leads to grow. You can use tools like Ringy.</p>
+          
+          
+        </section>
+        
+        <div class="divider"></div>
+
+        <section class="author-container">
+          <img class="author-image" src="resources/avatar-image-business-card-1.png" alt="">
+          <div class="author-desc">
+            <p class="author-name">Amy Burgess</p>
+            <p class="author-position">Customer Manger, Solution Oy</p>
+          </div>
+        </section>
+    
+      </article>
+    </main>
+
+
+    <footer>
+      <div class="author-info">
+        Coded by <a href="#">Dennie</a> | Challenge by
+        <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+          >devChallenges.io</a
+        >.
+      </div>
+    </footer>
+    
   </body>
 </html>

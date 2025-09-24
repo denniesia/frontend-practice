@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    }
+
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin: 16px auto;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    color: rgb(55, 65, 81);
+    text-decoration: none;
+}
+
+html {
+    background-color: #F2F5F9;
+}
+
+
+.card {
+    margin: 5em auto;
+    background-color: #FFFFFF;
+    max-width: 26em;
+    border-radius: 1em;
+}
+
+.hero-image,
+.overlay {
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+}
+
+.hero-image {
+    border-radius: 1em;
+    width: 100%;
+    object-fit: fill;
+    display: block;
+   
+}
+
+.overlay {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+}
+
+.content,
+.author-container {
+    padding: 0.5em 2em;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem; 
+    font-weight: 600;  
+    line-height: 1.5;
+    margin-bottom: .5em;
+}
+
+.desc {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;   
+    line-height: 1.5; 
+    color: #4A5567;
+    margin-bottom: 1em;
+}
+
+.divider {
+    height: 1px;             
+    background-color: #F2F5F9;   
+    width: 100%;
+    margin-bottom: .8em;
+}
+
+.author-container {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding-bottom: 1.3em;
+}
+
+.author-image {
+    width: 15%;
+    border-radius: 50%; 
+    border: 4px solid #F2F5F9;
+}
+
+.author-name {
+    color: #111729;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;   
+    line-height: 1.5; 
+}
+
+.author-position {
+    font-family: 'Lato', sans-serif;
+    font-size: .8rem;   
+    color: #1f2740;
+    font-weight: 500;
+
+}
