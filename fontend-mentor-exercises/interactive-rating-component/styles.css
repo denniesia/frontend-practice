@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --clr-white: hsl(0, 100%, 100%);
+    --clr-gray-500: hsl(217, 12%, 63%);
+    --clr-gray-900: hsl(213, 19%, 18%);
+    --clr-gray-950: hsl(216, 12%, 8%);
+    --clr-orange: hsl(25, 97%, 53%);
+
+}
+
+
+/* reset */ 
+*,
+*::before,
+*::after  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Overpass", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-weight: 400;
+    background-color: var(--clr-gray-950);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.container {
+    margin: 5em auto;
+    background-color: var(--clr-gray-900);
+    padding: 1.5em;
+    border: 3px solid var(--clr-gray-950);
+    border-radius: 2rem;
+    max-width: 26rem;
+    box-shadow: 0 4px 44px 0 rgba(30, 41, 59, 0.12);
+}
+
+.container .star-container {
+    background-color: hsl(213, 18%, 24%);
+    display: flex;
+    padding: .8rem;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    width: 10%;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+
+.container .title {
+    color: var(--clr-white);
+    margin-bottom: .5rem;
+}
+
+.container .desc {
+    color: var(--clr-gray-500);
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+}
+
+.container .rating-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .rating-container .rating {
+    background-color: hsl(213, 18%, 24%);
+    color: var(--clr-white);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s, background-color 0.3s;
+
+}
+.container .rating-container .rating:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-gray-950);
+}
+
+.container .submit {
+    background-color: var(--clr-orange);
+    color: var(--clr-gray-950);
+    border: none;
+    border-radius: 2rem;
+    padding: .9rem 2rem;
+    width: 100%;
+    font-weight: 700;
+    display: flex;
+    text-transform: uppercase;
+    cursor: pointer;
+    justify-content: center;
+    transition: 0.3s, background-color 0.3s;
+    margin-bottom: .5rem;
+}
+
+.container .submit:hover {
+    background-color: var(--clr-white);
+}
+
+.attribution {
+    color: var(--clr-white);
+}
