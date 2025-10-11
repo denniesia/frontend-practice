@@ -1,0 +1,172 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('./assets/background.png');
+    background-size: cover;
+    display: flex;
+}
+
+.main {
+    width: 60%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .btns-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main .btns-wrapper .btns-container {
+    display: flex;
+    gap: .6rem;
+}
+
+.main .btns-wrapper .btns-container .main {
+    white-space: nowrap;
+    padding: 0.5rem 1.5rem;
+    width: 9rem;
+    margin-top: 0;
+
+    font-size: 14px;
+    color: white;
+    border: none;
+}
+
+.main .btns-wrapper .btns-container .main.back {
+    background-color: #4A5568;
+
+}
+
+.main .btns-wrapper .btns-container .main.register {
+    background-color: #667EEA;
+}
+
+.main .wrapper {
+    width: 25rem;
+    margin: 5rem auto;
+    border: 1px solid black;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 8px 8px 2px #6177DC;
+}
+
+.main .wrapper .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.main .wrapper .logo-container .logo {
+    width: 4rem;
+    margin-bottom: .6rem;
+}
+
+.main .wrapper .logo-container .title {
+    color: #6177DC;;
+    font-size: 28px;
+}
+
+.main .wrapper .logo-container .text {
+    color: #4A5568;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+}
+
+.main .wrapper .content {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    
+}
+.main .wrapper .content .username,
+.main .wrapper .content .password {
+    width: 100%;
+    position: relative;
+}
+
+.main .wrapper .content input {
+    padding: .6rem .8rem .6rem 2.3rem;
+    background-color: #EDF2F7;
+    border: none;
+    border-bottom:1px solid #6177DC;
+}
+
+
+.main .wrapper .content  .icon-profile {
+    position: absolute;
+    z-index: 5;
+    left: 12px; 
+    top: 30%;
+    width: .8rem;
+}
+
+
+
+.main .wrapper .content .icon-key {
+    position: absolute;
+    z-index: 5;
+    left: 12px; 
+    top: 30%;
+    width: 1.1rem;
+}
+  
+
+.main .wrapper .content .btn {
+    padding: .6rem;
+}
+
+
+.main .wrapper .content .btn.blue {
+    margin-top: .6rem;
+    background-color: #667EEA;
+    border: none;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main .wrapper .content .btn.blue:hover {
+    background-color: #8c96c5;;
+    font-weight: 400;
+    box-shadow: 0 5px 20px #667EEA;
+   
+}
+
+.main .wrapper .content .btn.white {
+    background-color: white;
+    border: none;
+    color: #1d2127;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #3b424f;
+    cursor: pointer;
+}
+
+.main .wrapper .content .btn.white:hover {
+     box-shadow: 0 5px 20px #667EEA;
+}
+
+.main .wrapper .content .text {
+    text-align: center;
+    margin: .6rem 0 .6rem 0;
+    color: #3b424f;
+    font-size: 14px;
+}
+
+.main .wrapper .content span:hover {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
